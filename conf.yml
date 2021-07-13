@@ -1,0 +1,25 @@
+taks1:
+  name: 'example1'
+  cookieFile: 'example1.json'
+  Method: 'GET'
+  Url: 'http://zhiyou.smzdm.com/user/checkin/jsonp_checkin'
+  Headers:
+    #写User-Agent会导致解析失败,不能带特殊符号-
+    UA: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    Host: 'zhiyou.smzdm.com'
+    Referer: 'http://www.smzdm.com/'
+
+task2:
+  name: 'exp2'
+  cookieFile: 'example2.json'
+  Method: 'POST'
+  Url: 'http://zhiyou.smzdm.com/user/checkin/jsonp_checkin'
+  Headers:
+    #写User-Agent会导致解析失败,不能带特殊符号-
+    UA: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36'
+    Host: 'zhiyou.smzdm.com'
+    Referer: 'http://www.smzdm.com/'
+  #需要post提交的参数
+  Data:
+    foo: '123'
+    bar: '456'
